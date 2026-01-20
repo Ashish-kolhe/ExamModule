@@ -1,12 +1,11 @@
 import React from 'react'
-import { Profile } from '../components/Profile'
-import { Card } from '../components/card'
+import { Sidebar } from '../components/Sidebar'
+import Main from '../components/Main'
 export const Dashboard = () => {
   return (
-    <div ><Profile />
-    
-<Card/>
-    
+   <div className="dashboard-layout">
+      <Sidebar />
+      <Main/>
     </div>
 
   )
