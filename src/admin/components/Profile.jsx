@@ -2,6 +2,9 @@ import React from 'react'
 
 export const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>Profile
+        i am chaitanya
+    </div>
+
   )
 }
