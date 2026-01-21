@@ -54,6 +54,10 @@
   border: 1px dashed #bbb;
 }
 
+.gap{
+  padding-top: 6px;
+}
+
 
 .card {
   flex: 1;
@@ -75,7 +79,15 @@
   padding: 24px;
 }
 
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 60px;
+}
 
+<<<<<<< HEAD
 .overview-btn {
   width: 100%;
   display: flex;
@@ -96,8 +108,27 @@
   background-color:skyblue;
   
   
+=======
+.navbar {
+  height: 64px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+>>>>>>> 7fea8f38aba863bcc1208124af8d8b0b06a0a1e1
 
+/* Left side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+<<<<<<< HEAD
 }
 
 .overview-btn i {
@@ -106,3 +137,100 @@
   
 }
 
+=======
+.logo {
+  width: 36px;
+  height: 36px;
+  background-color: #5b5bf7;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.admin-btn {
+  border: 1.5px solid #e5e7eb;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.admin-btn:hover {
+  background-color: #f3f4f6;
+
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.footer-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.footer-icons a {
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.footer-icons a:hover {
+  color: #4f46e5;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+>>>>>>> 7fea8f38aba863bcc1208124af8d8b0b06a0a1e1
