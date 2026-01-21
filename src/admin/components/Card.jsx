@@ -11,7 +11,7 @@ export const Card = () => {
       </button>
       <button className="overview-btn">
         <i className="fa-solid fa-pen-to-square"></i>
-        Exams
+        Exam
       </button>
       <button className="overview-btn">
         <i className="fa-solid fa-trophy result-icon"></i>
