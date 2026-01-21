@@ -1,0 +1,26 @@
+.exams-page {
+  width: 100%;
+}
+
+.exams-page .page-top-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.exams-page .page-card {
+  min-height: 140px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exams-page .page-bottom {
+  margin-top: 1.5rem;
+  min-height: 260px;
+  border: 2px dashed #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

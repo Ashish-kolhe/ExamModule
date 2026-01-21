@@ -1,0 +1,17 @@
+.hero-outline {
+  display: flex;
+  gap: 1rem;
+  padding: 3rem;
+  border: 2px dashed #999;
+}
+
+.hero-left-outline,
+.hero-right-outline {
+  flex: 1;
+  min-height: 200px;
+  border: 2px dashed #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
