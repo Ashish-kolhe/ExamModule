@@ -76,6 +76,63 @@
   padding: 24px;
 }
 
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 60px;
+}
 
+.footer-logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
 
+.footer-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
 
+.footer-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.footer-icons a {
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.footer-icons a:hover {
+  color: #4f46e5;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
