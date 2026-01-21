@@ -8,7 +8,10 @@ const Main = () => {
       </section>
 
       <section className="main-body">
-        <div className="main-box">Widget 1</div>
+        <div className="main-box">
+           Icon 0 <br /> 
+           Total Exam
+        </div>
         <div className="main-box">Widget 2</div>
         <div className="main-box">Widget 3</div>
       </section>
