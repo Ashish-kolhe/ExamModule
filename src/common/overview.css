@@ -1,0 +1,31 @@
+
+.overview-page {
+  width: 100%;
+}
+
+
+.page-top-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+
+.page-card {
+  min-height: 140px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-bottom {
+  width: 100%;
+  min-height: 260px;
+  margin-top: 1.5rem;
+  border: 2px dashed #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
