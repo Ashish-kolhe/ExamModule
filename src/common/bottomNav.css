@@ -43,3 +43,6 @@
     display: none;
   }
 }
+.bottom-nav i{
+  margin: 8px;
+}
