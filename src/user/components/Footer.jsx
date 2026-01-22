@@ -5,7 +5,16 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        🎓 <span>Shree Genius It Hub</span>
+<i
+  className="fa-solid fa-graduation-cap"
+  style={{
+    fontSize: "22px",
+    color: "#4f46e5",
+    marginRight: "8px"
+  }}
+></i>
+<span>Shree Genius It Hub</span>
+
       </div>
 
       <div className="footer-icons">
