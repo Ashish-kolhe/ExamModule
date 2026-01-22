@@ -1,26 +1,244 @@
+/* ===============================
+   PAGE WRAPPER
+================================ */
 .stud-page {
   width: 100%;
+  padding: 24px;
+  background: #f9fafb;
 }
 
-.stud-page .page-top-grid {
+/* ===============================
+   STUDENT CARD
+================================ */
+.stud-page .student {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Card */
+.stud-stats {
+  width: 460px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.stud-stats-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stud-stats-icon {
+  font-size: 24px;
+  color: #4f46e5;
+}
+
+.stud-stats-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Stats */
+.stud-stats-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
-.stud-page .page-card {
-  min-height: 140px;
-  border: 2px dashed #aaa;
+.stud-stat {
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.stud-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stud-stat-label {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Button */
+.stud-stats-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stud-stats-btn i {
+  margin-right: 8px;
+}
+
+.stud-stats-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+}
+
+/* ===============================
+   MODAL OVERLAY
+================================ */
+.stud-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
 
-.stud-page .page-bottom {
-  margin-top: 1.5rem;
-  min-height: 260px;
-  border: 2px dashed #888;
+/* ===============================
+   MODAL CONTAINER
+================================ */
+.stud-modal {
+  width: 720px;
+  max-width: 95%;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.25);
+  animation: modalScale 0.25s ease;
+}
+
+/* ===============================
+   MODAL HEADER
+================================ */
+.stud-modal-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stud-modal-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.stud-modal-header i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #475569;
+  transition: color 0.15s ease;
+}
+
+.stud-modal-header i:hover {
+  color: #0f172a;
+}
+
+/* ===============================
+   SUMMARY GRID
+================================ */
+.stud-modal-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.stud-modal-section {
+  margin-top: 24px;
+}
+
+.stud-modal-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+/* Category list */
+.stud-modal-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.stud-modal-section li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.stud-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.stud-table th {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #64748b;
+  padding: 10px;
+  border-bottom: 2px solid #e5e7eb;
+  text-align: left;
+}
+
+.stud-table td {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #334155;
+}
+
+/* Status */
+.pass {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.fail {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+@keyframes modalScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
