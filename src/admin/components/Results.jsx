@@ -3,17 +3,28 @@ import "../../common/results.css";
 
 const Results = () => {
   return (
-    <div className="page-wire results-page">
-      <div className="page-top-grid">
-        <div className="page-card">Passed</div>
-        <div className="page-card">Failed</div>
-        <div className="page-card">Top Rank</div>
-      </div>
+    <div className="box">
 
-      <div className="page-bottom">
-        Results Full Section
+      <div className="inner">
+        <div className="text">
+          <div className="left">
+            <span className="icon-bg">
+              <i className="fa-solid fa-book-open"></i>
+            </span>
+
+            <div className="content">
+              <b>C++</b>
+              <span className="subtext">6 submissions</span>
+            </div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+
+        
+
       </div>
     </div>
+
   );
 };
 
