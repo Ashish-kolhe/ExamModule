@@ -29,3 +29,304 @@
   align-items: center;
   justify-content: center;
 }
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+}
+
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.orange { background: #f39c12; }
+.purple { background: #9b59b6; }
+.teal { background: #1abc9c; }
+.red { background: #e74c3c; }
+
+/* ================================
+   TOP GRID – 3 CARDS PER ROW
+================================ */
+.page-top-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ================================
+   CARD DESIGN
+================================ */
+.page-card {
+  border: none;
+  background: #ffffff;
+  padding: 22px 24px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bottom Accent Line */
+.page-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #6dd5fa);
+  opacity: 0.85;
+}
+
+/* Hover Effect */
+.page-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+
+/* ================================
+   ICON STYLE
+================================ */
+.card-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Gradient Icon Colors */
+.blue {
+  background: linear-gradient(135deg, #3498db, #6dd5fa);
+}
+
+.green {
+  background: linear-gradient(135deg, #2ecc71, #6ee7b7);
+}
+
+.orange {
+  background: linear-gradient(135deg, #f39c12, #f6c667);
+}
+
+.purple {
+  background: linear-gradient(135deg, #9b59b6, #d6a2e8);
+}
+
+.teal {
+  background: linear-gradient(135deg, #1abc9c, #6fffe9);
+}
+
+.red {
+  background: linear-gradient(135deg, #e74c3c, #ff7675);
+}
+
+/* ================================
+   INNER TEXT CONTENT
+================================ */
+.page-card h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.page-card h2 {
+  margin-top: 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1100px) {
+  .page-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .page-top-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ================================
+   PAGE BOTTOM CONTAINER
+================================ */
+.page-bottom {
+ 
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ================================
+   BOTTOM BOX DESIGN
+================================ */
+.bottom-section {
+  background: #ffffff;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.bottom-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* ================================
+   SECTION HEADINGS
+================================ */
+.bottom-section h3 {
+  margin: 0 0 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+/* ================================
+   CONTENT TEXT
+================================ */
+.bottom-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Highlight Exam Name */
+.bottom-section strong {
+  color: #34495e;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .page-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================================
+   FULL WIDTH BOTTOM SECTION
+================================ */
+.page-bottom {
+  display: flex; /* side by side */
+  width: 100%;
+  max-width: 100%;
+  background: #f4f6f9; /* optional light background */
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
+  align-items: stretch; /* make children full height */
+}
+
+/* Each bottom-section fills half width and full height */
+.page-bottom .bottom-section {
+  flex: 1; /* equal width */
+  background: #ffffff;
+  padding: 22px 24px 22px 60px; /* space for icon */
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  height: 200px; /* fixed height, adjust as needed */
+  position: relative; /* for icon placement */
+}
+
+/* Hover effect */
+.page-bottom .bottom-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Section heading */
+.page-bottom .bottom-section h3 {
+  margin: 0 0 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+/* Text content */
+.page-bottom .bottom-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.page-bottom .bottom-section strong {
+  color: #34495e;
+}
+
+/* ================================
+   ICONS USING CSS ::before
+================================ */
+.page-bottom .bottom-section::before {
+  content: "\f15c"; /* default Font Awesome icon */
+  font-family: "Font Awesome 6 Free"; 
+  font-weight: 900; 
+  font-size: 32px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3498db;
+}
+
+/* Different icons/colors per card */
+.page-bottom .bottom-section:nth-child(1)::before {
+  content: "\f15c"; /* Exam icon */
+  color: #3498db;
+}
+
+.page-bottom .bottom-section:nth-child(2)::before {
+  content: "\f201"; /* Chart/Results icon */
+  color: #e67e22;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .page-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .page-bottom .bottom-section {
+    padding-left: 22px;
+    height: auto; /* auto height on mobile */
+  }
+
+  .page-bottom .bottom-section::before {
+    left: 10px;
+  }
+}
