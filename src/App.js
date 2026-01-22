@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
+
 import { Home } from './user/pages/Home';
 
 import { Dashboard } from './admin/pages/Dashboard';
@@ -15,6 +17,8 @@ function App() {
         <Route path='/admin/dashboard' element={<Dashboard/>}></Route>
          <Route path='/admin/students' element={<Students/>}></Route>
       </Routes>
+         
+
     </Router>
   );
 }

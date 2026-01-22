@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Card } from "./Card";
+import { Profile } from "./Profile";
+import { Footer } from "./Footer";
 
-export const Sidebar = () => {
+export const Sidebar = ({ activePage, setActivePage }) => {
   return (
-    <div>Sidebar</div>
-  )
-}
+    <aside className="sidebar">
+      <Profile />
+      <Card activePage={activePage} setActivePage={setActivePage} />
+      <Footer />
+    </aside>
+  );
+};
