@@ -1,17 +1,75 @@
-.hero-outline {
+.hero {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding: 3rem;
-  border: 2px dashed #999;
 }
 
-.hero-left-outline,
-.hero-right-outline {
+/* Common Card Style */
+.hero-card {
   flex: 1;
-  min-height: 200px;
-  border: 2px dashed #bbb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #777;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Left Card Accent */
+.left-card {
+  border-left: 6px solid #5b5bf7;
+}
+
+/* Right Card Accent */
+.right-card {
+  border-left: 6px solid #22c55e;
+}
+
+.hero-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Tech List */
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.tech-list li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.tech-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-size: 12px;
+}
+
+/* Highlight Box */
+.highlight {
+  background: #f9fafb;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
 }
