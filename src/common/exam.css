@@ -128,4 +128,180 @@
   font-size: 14px;
 }
 
+/* ===== Card ===== */
+.box {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.active-btn {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.stats {
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+/* ===== Actions ===== */
+.inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action:hover {
+  background: #e5e7eb;
+}
+
+.delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.duplicate {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+/* ===== Modal ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: #fff;
+  width: 90%;
+  max-width: 420px;
+  padding: 24px;
+  border-radius: 14px;
+  animation: pop 0.25s ease-out;
+}
+
+.modal h2 {
+  margin-bottom: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.edit {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.box {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit { background: #ede9fe; }
+.duplicate { background: #e0f2fe; }
+.delete { background: #fee2e2; color: #b91c1c; }
+
+.modal.large {
+  max-width: 600px;
+}
+
+.question-box {
+  background: #f9fafb;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+
+.option {
+  display: block;
+  margin: 6px 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+
+
 
