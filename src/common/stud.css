@@ -12,8 +12,11 @@
 ================================ */
 .stud-page .student {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  justify-content:space-around;
 }
+
+
 
 /* Card */
 .stud-stats {
