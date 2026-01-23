@@ -1,4 +1,4 @@
-.analytics-page {
+/* .analytics-page {
   width: 100%;
 }
 
@@ -10,7 +10,7 @@
 
 .analytics-page .page-card {
   min-height: 160px;
-  border: 2px dashed #aaa;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +19,163 @@
 .analytics-page .page-bottom {
   margin-top: 1.5rem;
   min-height: 300px;
-  border: 2px dashed #888;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.analytics-page .section-title {
+  margin: 20px 0;
+}
+
+.exam-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.chart-card {
+  text-align: center;
+}
+
+.chart-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+
+.card-icon.blue { background: #e3f2fd; color: #1976d2; }
+.card-icon.green { background: #e8f5e9; color: #2e7d32; }
+.card-icon.red { background: #fdecea; color: #c62828; }
+.card-icon.purple { background: #f3e5f5; color: #6a1b9a; }
+.card-icon.orange { background: #fff3e0; color: #ef6c00; } */
+
+.analytics-page {
+  width: 100%;
+}
+
+/* Header */
+.analytics-header {
+  margin-bottom: 1.5rem;
+}
+
+.analytics-header h2 {
+  font-size: 1.6rem;
+}
+
+.analytics-header p {
+  color: #777;
+}
+
+/* KPI Cards */
+.page-top-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+}
+
+.stat-info span {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.stat-info h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* Analytics Layout */
+.analytics-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.2rem;
+}
+
+.analytics-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.analytics-box h3 {
+  margin-bottom: 12px;
+}
+
+/* Exam Performance */
+.exam-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.exam-row:last-child {
+  border-bottom: none;
+}
+
+.exam-metrics span {
+  display: block;
+  font-weight: 500;
+}
+
+/* Trends */
+.trend-placeholder {
+  height: 180px;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.trend-placeholder i {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/* Utilities */
+.muted {
+  color: #888;
+}
+
+/* Icon colors */
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card-icon.blue { background: #e3f2fd; color: #1976d2; }
+.card-icon.green { background: #e8f5e9; color: #2e7d32; }
+.card-icon.red { background: #fdecea; color: #c62828; }
+.card-icon.purple { background: #f3e5f5; color: #6a1b9a; }
+.card-icon.orange { background: #fff3e0; color: #ef6c00; }
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
